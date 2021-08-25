@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Photo Sharing Application</title>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icon/Share Picture.ico" type="image/x-icon">
+    <!-- Firebase CDNs -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+</head>
+<body>
+	<div id="container">
+
+		<div id="progress-container">
+			<progress max="100"></progress>
+		</div>
+
+		<div id="images"></div>
+		
+		<div class="buttons-grid">
+			<div>
+				<input type="file" id="upload-button">
+			</div>
+            <div>
+                <button id="clear" class="blue-button">Remove all photos</button>
+            </div>
+		</div>
+
+	</div>
+    <script src="script/script.js"></script>
+</body>
+</html>
